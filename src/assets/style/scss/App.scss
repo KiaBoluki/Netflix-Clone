@@ -1,0 +1,17 @@
+@import './colors';
+@import './banner';
+@import './movie_container';
+@import './row';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #ddd;
+}
+body{
+    background-color: $dark;
+}
+
+
