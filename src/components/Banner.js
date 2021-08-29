@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "../axios";
 import requests from "../requests";
+import Navbar from "./Navbar";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -23,6 +24,7 @@ function Banner() {
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
       }}
     >
+        <Navbar/>
       <div className="banner__fader">
         <div className="banner__details">
           <h1>{movie?.name || movie?.title || movie?.original_name}</h1>
