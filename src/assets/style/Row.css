@@ -1,0 +1,53 @@
+/* src/assets/style/Row.css */
+.row {
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .row__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e50914;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .row__posters {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #e50914 #333;
+  }
+  
+  .row__posters::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .row__posters::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 4px;
+  }
+  
+  .row__posters::-webkit-scrollbar-track {
+    background: #333;
+  }
+  
+  @media (max-width: 1368px) {
+    .row {
+      padding: 2rem;
+    }
+    .row__title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      padding: 1rem;
+    }
+    .row__title {
+      font-size: 1.5rem;
+    }
+  }
